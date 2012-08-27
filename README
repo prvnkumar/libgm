@@ -19,7 +19,7 @@ about
 -----
 The Goldwasser–Micali (GM) cryptosystem is an asymmetric key encryption algorithm developed by Shafi Goldwasser and Silvio Micali in 1982. GM has the distinction of being the first probabilistic public-key encryption scheme which is provably secure under standard cryptographic assumptions. However, it is not an efficient cryptosystem, as ciphertexts may be several hundred times larger than the initial plaintext. To prove the security properties of the cryptosystem, Goldwasser and Micali proposed the widely-used definition of semantic security.
 
-This library provides a very simple implementation of the Coldwasser-Micali cryptosystem in C. We use the GNU Multiple Precision Arithmetic Library (GMP) for the arithmetic operations. In this implemetation, we have made no attempt to secure the memory containing the sensitive data such as the private key.
+This library provides a very simple implementation of the Goldwasser-Micali cryptosystem in C. We use the GNU Multiple Precision Arithmetic Library (GMP) for the arithmetic operations. In this implemetation, we have made no attempt to secure the memory containing the sensitive data such as the private key.
 
 libraries
 ---------
