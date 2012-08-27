@@ -1,4 +1,34 @@
-libgm
-=====
+libgm - An open source implementation of the Goldwasser-Micali cryptosystem
+---------------------------------------------------------------------------
 
-An open source implementation of the Goldwasser-Micali cryptosystem
+install
+-------------
+  Build :
+    $ git clone http://github.com/areteix/libgm
+    $ cd libgm
+    $ mkdir build
+    $ cd build
+    $ cmake ..
+    $ make
+  Test :
+    $ cd testgm
+    $ ./testgm
+
+
+about
+-----
+The Goldwasser–Micali (GM) cryptosystem is an asymmetric key encryption algorithm developed by Shafi Goldwasser and Silvio Micali in 1982. GM has the distinction of being the first probabilistic public-key encryption scheme which is provably secure under standard cryptographic assumptions. However, it is not an efficient cryptosystem, as ciphertexts may be several hundred times larger than the initial plaintext. To prove the security properties of the cryptosystem, Goldwasser and Micali proposed the widely-used definition of semantic security.
+
+This library provides a very simple implementation of the Coldwasser-Micali cryptosystem in C. We use the GNU Multiple Precision Arithmetic Library (GMP) for the arithmetic operations. In this implemetation, we have made no attempt to secure the memory containing the sensitive data such as the private key.
+
+libraries
+---------
+  * GMP: Arbitrary precision arithmetic - http://gmplib.org/
+
+related
+-------
+  * libpailler - Implementation of the Paillier cryptosystem - http://acsc.cs.utexas.edu/libpaillier/
+
+links
+-----
+  * Goldwasser–Micali cryptosystem - http://en.wikipedia.org/wiki/Goldwasser–Micali_cryptosystem
